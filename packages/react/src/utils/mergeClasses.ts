@@ -1,3 +1,3 @@
-export function mergeClasses(classes: (string | undefined)[]): string {
-    return classes.filter(Boolean).join(' ');
+export function mergeClasses(classes: (string | undefined)[]): {className: string} {
+    return { className: classes.filter(Boolean).join(' ') };
 }
